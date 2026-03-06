@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SAMP Roleplay Server</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<h2 class="logo">SAMP RP</h2>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#rules">Rules</a></li>
+<li><a href="#servers">Servers</a></li>
+<li><a href="#jobs">Jobs</a></li>
+<li><a href="#factions">Factions</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="section">
+<h1>SAMP Roleplay Server</h1>
+<p>Selamat datang di website komunitas Roleplay.</p>
+<p>Mainkan server RP terbaik dan nikmati pengalaman realistis.</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+<h2>Apa itu SAMP?</h2>
+<p>SAMP adalah multiplayer mod dari GTA San Andreas yang memungkinkan pemain bermain bersama secara online.</p>
+
+<h2>Apa itu Roleplay?</h2>
+<p>Roleplay adalah bermain dengan memerankan karakter seperti kehidupan nyata.</p>
+</section>
+
+<!-- RULES -->
+<section id="rules" class="section">
+
+<h2>Server Rules</h2>
+
+<div class="rule">
+<h3>No Random Deathmatch (RDM)</h3>
+<p>Dilarang membunuh pemain tanpa alasan RP.</p>
+<p class="good">Good : Polisi menembak kriminal setelah kejar-kejaran.</p>
+<p class="bad">Bad : Menembak pemain di jalan tanpa alasan.</p>
+</div>
+
+<div class="rule">
+<h3>No Vehicle Deathmatch (VDM)</h3>
+<p>Dilarang menabrak pemain dengan kendaraan.</p>
+<p class="good">Good : Tidak sengaja menabrak.</p>
+<p class="bad">Bad : Sengaja menabrak pemain tanpa RP.</p>
+</div>
+
+<div class="rule">
+<h3>No Meta Gaming</h3>
+<p>Dilarang menggunakan info luar game.</p>
+<p class="bad">Bad : Mengetahui nama dari nametag.</p>
+</div>
+
+<div class="rule">
+<h3>No Power Gaming</h3>
+<p>Dilarang melakukan hal tidak realistis.</p>
+<p class="bad">Bad : Mengangkat mobil sendirian.</p>
+</div>
+
+</section>
+
+
+
+</section>
+
+<!-- JOBS -->
+<section id="jobs" class="section">
+<h2>Pekerjaan Roleplay</h2>
+
+<div class="card">Police</div>
+<div class="card">Mechanic</div>
+<div class="card">Taxi Driver</div>
+<div class="card">Trucker</div>
+<div class="card">Doctor</div>
+<div class="card">Fisherman</div>
+
+</section>
+
+<!-- FACTIONS -->
+<section id="factions" class="section">
+<h2>Factions</h2>
+
+<ul>
+<div class="card">/div>Police Department</div>
+<div class="card">Government</div>
+<div class="card">Medical Department</div>
+<div class="card">Gangster street</div>
+<div class="card">Mafia</div>
+</ul>
+
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section">
+
+<h2>Gallery Gameplay</h2>
+
+<img src="1.jpg" class="gallery">
+<img src="2.jpg" class="gallery">
+<img src="3.jpg" class="gallery">
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+
+<h2>Contact Admin</h2>
+
+<form id="contactForm">
+
+<input type="text" id="nama" placeholder="Nama" required>
+<input type="tel" id="hp" placeholder="Nomor HP" required>
+<textarea id="pesan" placeholder="Pesan" required></textarea>
+
+<button type="submit">Kirim</button>
+
+</form>
+
+</section>
+
+<!-- WATERMARK -->
+<div class="watermark">
+TikTok : @_dikz30
+</div>
+<!-- MUSIK BACKGROUID -->
+<audio autoplay loop>
+<source src="lunar.mp3" type="audio/mpeg">
+</audio>
+
+<!-- JAVASCRIPT -->
+<script>
+
+document.getElementById("contactForm").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+let nama = document.getElementById("nama").value;
+let hp = document.getElementById("hp").value;
+let pesan = document.getElementById("pesan").value;
+
+let nomorAdmin = "62882008753937";
+
+let text =
+"Pesan dari Website SAMP RP\n\n" +
+"Nama : " + nama + "\n" +
+"No HP : " + hp + "\n" +
+"Pesan : " + pesan;
+
+let url = "https://api.whatsapp.com/send?phone=" + nomorAdmin + "&text=" + encodeURIComponent(text);
+
+window.open(url, "_blank");
+
+});
+
+</script>
+
+</body>
+</html>
